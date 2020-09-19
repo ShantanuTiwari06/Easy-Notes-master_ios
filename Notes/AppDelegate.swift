@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Notes
 //
-//  Created by Irina on 7/30/17.
-//  Copyright © 2017 Apple Developer. All rights reserved.
+//  Created by Shantanu .
+//  Copyright © 2020 Apple Developer. All rights reserved.
 //
 
 import UIKit
@@ -17,14 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        UINavigationBar.appearance().barTintColor = UIColor(red: 245.0/255.0, green: 79.0/255.0, blue: 80.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
-        let color = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor("#1d2d50")
+        UINavigationBar.appearance().tintColor = UIColor("#1e5f74")
+        let color = UIColor("#fcdab7")
         let font = UIFont(name: "Roboto-Medium", size: 18)!
         
         let attributes: [String: AnyObject] = [
             NSFontAttributeName: font,
-            NSForegroundColorAttributeName: color
+            NSForegroundColorAttributeName: color ?? UIColor.red
         ]
         
         UINavigationBar.appearance().titleTextAttributes = attributes
@@ -85,3 +85,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 let context = appDelegate.persistentContainer.viewContext
+
+extension UIColor {
+    convenience init?(_ hexString: String) {
+        var chars = Array(hexString.hasPrefix("#") ? hexString.dropFirst() : hexString[...])
+        switch chars.count {
+        case 3: chars = chars.flatMap { [$0, $0] }; fallthrough
+        case 6: chars = ["F","F"] + chars
+        case 8: break
+        default: return nil
+        }
+        self.init(red: .init(strtoul(String(chars[2...3]), nil, 16)) / 255,
+                  green: .init(strtoul(String(chars[4...5]), nil, 16)) / 255,
+                  blue: .init(strtoul(String(chars[6...7]), nil, 16)) / 255,
+                  alpha: .init(strtoul(String(chars[0...1]), nil, 16)) / 255)
+    }
+}

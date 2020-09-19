@@ -18,8 +18,8 @@
 		8CB2CC821F2E8D9600C59842 /* noteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CC811F2E8D9600C59842 /* noteViewController.swift */; };
 		8CB2CC851F2E8D9600C59842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB2CC831F2E8D9600C59842 /* Main.storyboard */; };
 		8CB2CC881F2E8D9700C59842 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2CC861F2E8D9600C59842 /* Notes.xcdatamodeld */; };
-		8CB2CC8A1F2E8D9700C59842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB2CC891F2E8D9700C59842 /* Assets.xcassets */; };
 		8CB2CC8D1F2E8D9700C59842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB2CC8B1F2E8D9700C59842 /* LaunchScreen.storyboard */; };
+		A6C8A3EE2516AA3500873C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8A3ED2516AA3400873C99 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		8CB2CC811F2E8D9600C59842 /* noteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteViewController.swift; sourceTree = "<group>"; };
 		8CB2CC841F2E8D9600C59842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CB2CC871F2E8D9600C59842 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
-		8CB2CC891F2E8D9700C59842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CB2CC8C1F2E8D9700C59842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CB2CC8E1F2E8D9700C59842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C8A3ED2516AA3400873C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Documents/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +86,9 @@
 				8CB2CC7F1F2E8D9600C59842 /* AppDelegate.swift */,
 				8C530DD71F328320004B9874 /* noteTableViewController.swift */,
 				8C530DD91F328331004B9874 /* noteTableViewCell.swift */,
+				A6C8A3ED2516AA3400873C99 /* Assets.xcassets */,
 				8CB2CC811F2E8D9600C59842 /* noteViewController.swift */,
 				8CB2CC831F2E8D9600C59842 /* Main.storyboard */,
-				8CB2CC891F2E8D9700C59842 /* Assets.xcassets */,
 				8CB2CC8B1F2E8D9700C59842 /* LaunchScreen.storyboard */,
 				8CB2CC8E1F2E8D9700C59842 /* Info.plist */,
 				8CB2CC861F2E8D9600C59842 /* Notes.xcdatamodeld */,
@@ -159,10 +159,10 @@
 				8C530DD61F328127004B9874 /* Roboto-Thin.ttf in Resources */,
 				8CB2CC8D1F2E8D9700C59842 /* LaunchScreen.storyboard in Resources */,
 				8C530DD51F328127004B9874 /* Roboto-Regular.ttf in Resources */,
-				8CB2CC8A1F2E8D9700C59842 /* Assets.xcassets in Resources */,
 				8C530DD41F328127004B9874 /* Roboto-Medium.ttf in Resources */,
 				8C530DD31F328127004B9874 /* Roboto-Light.ttf in Resources */,
 				8C530DD21F328127004B9874 /* Roboto-Bold.ttf in Resources */,
+				A6C8A3EE2516AA3500873C99 /* Assets.xcassets in Resources */,
 				8CB2CC851F2E8D9600C59842 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

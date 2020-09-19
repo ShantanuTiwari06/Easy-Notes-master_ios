@@ -2,8 +2,8 @@
 //  noteTableViewController.swift
 //  Notes
 //
-//  Created by Irina on 8/2/17.
-//  Copyright © 2017 Apple Developer. All rights reserved.
+//  Created by Shantanu .
+//  Copyright © 2020 Apple Developer. All rights reserved.
 //
 
 import UIKit
