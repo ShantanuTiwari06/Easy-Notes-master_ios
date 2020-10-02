@@ -1,3 +1,3 @@
-# Easy-Notes-master_ios
+# WorkStack
 
-This is a note taking app with image .
+Work Stack is a note taking application build on Coredata for data storage and persistance
